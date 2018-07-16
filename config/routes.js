@@ -15,9 +15,12 @@ app.get('/register', register.index);
 app.post('/register', register.create)
 
 
+
+app.get('/clientschedule/:id', clientschedule.index)
+app.post('/clientlogin', clientschedule.login);
+
 app.use(authenticateUser);
 
-app.get('/clientlogin', clientschedule.index)
 
 }
 
