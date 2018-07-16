@@ -9,21 +9,11 @@ app.get('/', homepage.index);
 
 app.get('/trainerlogin', trainerlogin.index);
 
-
+//registration
 app.get('/register', register.index);
-
-
-
-
-
-
-
-
+app.post('/register', register.create)
 
 app.use(authenticateUser)
-
-
-
 
 }
 

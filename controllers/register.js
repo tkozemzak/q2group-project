@@ -9,6 +9,18 @@ module.exports = {
     })
   },
 
+  create: function(req, res) {
+    knex("clients").insert({
+      name: req.body.name,
+      age: req.body.age,
+      level: req.body.level,
+      email: req.body.email,
+      password: req.body.password
+    }).then(()=>{
+      res.redirect('/register')
+    })
+  }
+
 
 
 }
