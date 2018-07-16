@@ -1,6 +1,7 @@
 const homepage = require("../controllers/homepage.js");
 const trainerlogin = require("../controllers/trainerlogin.js");
 const register = require("../controllers/register.js");
+const clientschedule = require("../controllers/clientschedule.js");
 module.exports = function(app){
 
 
@@ -13,7 +14,10 @@ app.get('/trainerlogin', trainerlogin.index);
 app.get('/register', register.index);
 app.post('/register', register.create)
 
-app.use(authenticateUser)
+
+app.use(authenticateUser);
+
+app.get('/clientlogin', clientschedule.index)
 
 }
 
