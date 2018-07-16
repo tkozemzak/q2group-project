@@ -9,6 +9,19 @@ module.exports = {
     })
   },
 
+  login: function(req, res) {
+      knex('trainer').where('email', req.body.email).then((results) => {
+        let user = results[0];
+        if (user.password === req.body.password) {
+          req.session.user = user;
+
+          res.redirect("/trainerschedule");
+        } else {
+          res.redirect("/");
+        }
+      })
+    },
+
 
 
 }

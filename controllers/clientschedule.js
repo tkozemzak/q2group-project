@@ -8,6 +8,7 @@ module.exports = {
 
     })
   },
+  
   login: function(req, res) {
       knex('clients').where('email', req.body.email).then((results) => {
         let user = results[0];

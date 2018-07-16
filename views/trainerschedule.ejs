@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .card {
+      border: solid;
+    }
+    </style>
+  </head>
+  <body>
+    trainer schedule
+    <h1>Hello <%= results.name %></h1>
+
+    <h3>Your Appointments:</h3>
+      <% for(let i=0; i<appts.length; i++){ %>
+        <div class='card'>
+          <h2>Name: <%= appts[i].name %></h2>
+          <h3>Date: <%= appts[i].date%></h3>
+          <p>
+            Notes: <%= appts[i].notes %>
+          </p>
+          <p>
+            Experience Level: <%= appts[i].level %>
+          </p>
+          <p>
+            Payment Status: <%= appts[i].payment_status %>
+          </p>
+          <p>
+            Age: <%= appts[i].age %>
+          </p>
+          <p>
+            Email: <%= appts[i].email %>
+          </p>
+        </div>
+        <% } %>
+  </body>
+</html>
