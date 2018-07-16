@@ -17,7 +17,7 @@ module.exports = {
       email: req.body.email,
       password: req.body.password
     }).then(()=>{
-      res.redirect('/clientlogin')
+      res.redirect('/')
     })
   }
 
