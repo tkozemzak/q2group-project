@@ -3,7 +3,9 @@ module.exports = {
       client: 'pg',
       connection: {
         database: "trainerApp",
-        host: "localhost"
+        host: "localhost",
+        user: 'administrator',
+        password: 'RelsonGracie77'
       },
       migrations: {
           directory: __dirname + '/db/migrations',
