@@ -39,7 +39,7 @@
           <td><%= classes[i].start_time %></td>
           <td>
             <form>
-              <a href="/signup/<%=classes[i].id%>">Sign up</a>
+              <a href="/signup/<%=classes[i].id%>" onclick="myFunction()">Sign up</a>
             </form>
 
           </td>
@@ -52,5 +52,12 @@
 
     </table>
     </div>
+
+
+<script>
+function myFunction() {
+    alert("You're signed up!");
+}
+</script>
   </body>
 </html>
