@@ -2,9 +2,9 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("appts", function(table){
     table.increments();
-    table.integer("trainer_id")
+    table.integer("class_id")
       .references("id")
-      .inTable("trainer")
+      .inTable("classes")
       .onDelete("CASCADE")
       .index();
       table.integer("client_id")

@@ -22,19 +22,22 @@ module.exports = {
         }
       })
     },
-// 
-// signup: function(req, res) {
-//   console.log(req.params.id)
 //
-//   knex('classes').where('id', req.params.id).then((results)=>{
-//     knex('appts').insert({
-//       client_id: req.session.user.id,
-//
-//     })
-//   })
-//   res.redirect(`/clientschedule/${req.session.user.id}`);
-//
-// },
+signup: function(req, res) {
+
+  knex('classes').where('id', req.params.id).then((results)=>{
+    knex('appts').insert({
+      class_id: results[0].id,
+      client_id: req.session.user.id
+
+
+    })
+  }).then(()=>{
+    res.redirect(`/clientschedule/${req.session.user.id}`);
+  })
+
+
+},
 
 
     logout: function(req, res) {
