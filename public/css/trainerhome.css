@@ -1,17 +1,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-  background-image: url("http://www.punchup-boxing.com/wp-content/uploads/2014/03/concrete_background6.jpg");
+  background-image: url("https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/04/Crossfit-Gym.jpg");
   color: white;
-
+  background: cover;
 }
-
-
 
 h3 {
   text-align: center;
   margin: 50px;
   font-size: 60px;
+  color: white;
 }
 
 input[type=text], input[type=password] {
@@ -37,25 +35,21 @@ button:hover {
   opacity: 0.8;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
 .imgcontainer {
   text-align: center;
   margin: 50px 0 12px 0;
 }
 
 img.avatar {
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   border-radius: 80%;
 }
 
 .container {
-  padding: 16px;
+  height: 700px;
+  width: 700px;
+  padding: 25px;
 }
 
 span.psw {
