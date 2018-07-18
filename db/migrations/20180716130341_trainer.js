@@ -5,7 +5,8 @@ exports.up = function(knex, Promise) {
     table.string("name");
     table.string("email");
     table.string("password");
-    table.string("img_url")
+    table.string("img_url");
+    table.text("bio")
     table.timestamps(true, true);
   })
 };
