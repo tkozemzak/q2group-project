@@ -24,27 +24,23 @@ module.exports = {
     },
 //
 signup: function(req, res) {
-
   knex('classes').where('id', req.params.id).then((results)=>{
+    console.log(results[0].id);
     knex('appts').insert({
       class_id: results[0].id,
       client_id: req.session.user.id
-
-
+    }).then(()=>{
+      res.redirect(`/clientschedule/${req.session.user.id}`);
     })
-  }).then(()=>{
-    res.redirect(`/clientschedule/${req.session.user.id}`);
   })
 
 
 },
 
-
     logout: function(req, res) {
-      req.session.destroy();
-
+      req.session.destroy().then(()=>{
         res.redirect('/')
-
+      })
     }
 
 

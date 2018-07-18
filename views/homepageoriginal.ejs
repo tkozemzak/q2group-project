@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    Welcome to <%= results.name %>'s Training Site!
+    <a href="/trainerlogin">Trainer Login</a>
+
+    <h3>Member Login</h3>
+    <form action="/clientlogin" method="post">
+    <input type="text" name="email" placeholder="Email" />
+    <input type="text" name="password" placeholder="New Password" />
+    <input type="submit" value="Login"/>
+    </form>
+
+    <a href="/register">Book An Appointment</a>
+
+    </body>
+
+  </body>
+</html>

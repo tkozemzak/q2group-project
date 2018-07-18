@@ -1,23 +1,190 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    Welcome to <%= results.name %>'s Training Site!
-    <a href="/trainerlogin">Trainer Login</a>
 
-    <h3>Member Login</h3>
-    <form action="/clientlogin" method="post">
-    <input type="text" name="email" placeholder="Email" />
-    <input type="text" name="password" placeholder="New Password" />
-    <input type="submit" value="Login"/>
-    </form>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+      <link rel="stylesheet" href="/static/css/style.css">
+   </head>
 
-    <a href="/register">Book An Appointment</a>
+   <body>
 
-    </body>
+      <!-- Nav bar  -->
 
+      <nav class="nav nav-pills nav-justified">
+         <a class="nav-item nav-link " href="#">My Celebrity Fitness</a>
+         <a class="nav-item nav-link" href="/register">Register Now</a>
+         <a class="nav-item nav-link" href="/trainerlogin">Trainer Login</a>
+         <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Member Login</a>
+               <div class="dropdown-menu">
+
+                  <form action="/clientlogin" method="post">
+                  <input type="text" name="email" placeholder="Email" />
+                  <input type="text" name="password" placeholder="New Password" />
+                  <input type="submit" value="Login"/>
+                  </form>
+               </div>
+            </li>
+      </nav>
+
+
+      <!--Carousel slides  -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators ">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img class="d-block w-100" src="http://rpmfitness.com/skin/frontend/rpmfitness/default/images/athletes/chelsey-grigsby/Chelsey2.jpg" alt="First slide">
+               <div class="carousel-caption d-none d-md-block text-left">
+                  <h5>The World Today.</h5>
+                  <p4>Take a look into the world and explore a more broad outlook at our beautiful planet we live on.</p>
+                     <button type="button" class="btn btn-primary btn-lg">Book Now</button>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="https://tinasfitness.com/wp-content/uploads/2014/12/DSC05965sm-900x500.jpg " alt="Second slide">
+               <div class="carousel-caption d-none d-md-block">
+                  <h5>Headline New's Today.</h5>
+                  <p4>See whats happeing today all around the world and the possibilities that has come.</p>
+                     <button type="button" class="btn btn-primary btn-lg">Book Now</button>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <img class="d-block w-100" src="https://tinasfitness.com/wp-content/uploads/2014/12/DSC05959sm-900x500.jpg" alt="Third slide">
+               <div class="carousel-caption d-none d-md-block text-right">
+                  <h5>Today's measurement.</h5>
+                  <p4>Take a look around from a better perspective.</p>
+                     <button type="button" class="btn btn-primary btn-lg">Book Now</button>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+         </div>
+         <!-- column rows  -->
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 text-center">
+                  <img class="avatar" src="https://a3-images.myspacecdn.com/images03/2/5427da4e0cac438f8ece243991cc7e28/300x300.jpg" alt="avatar">
+                  <h2>Guy Fieri</h2>
+                  <p> </p>
+                  <a href="#">
+                     <p><button type="button" class="btn btn-primary">Book</button></p>
+                  </a>
+               </div>
+               <div class="col-lg-4 text-center">
+                  <img class="avatar" src="https://i.pinimg.com/originals/89/54/09/8954092673fe3196b0b2fd27bb7f9f59.jpg" alt="avatar">
+                  <h2>Pei King</h2>
+                  <p> </p>
+                  <a href="#">
+                     <p><button type="button" class="btn btn-primary">Book</button></p>
+                  </a>
+               </div>
+               <div class="col-lg-4 text-center">
+                  <img class="avatar" src="https://tinasfitness.com/wp-content/uploads/2014/12/DSC05959sm-900x500.jpg" alt="avatar">
+                  <h2>Jeffery Klier</h2>
+                  <p> </p>
+                  <a href="#">
+                     <p><button type="button" class="btn btn-primary">Book</button></p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- page line dividers  -->
+         <hr class="featurette-divider">
+         <!-- page line dividers -->
+
+         <!-- page 2  -->
+         <div class="row featurete">
+            <!-- <div class="row"> -->
+            <div class="col-md-7 text-center">
+               <h2>-Hannah
+                <span class="text-muted">Montana</span></h3>
+                <p class="lead">
+                  "I’ve been training with Pei King at the bootcamp for several years and I’m addicted to her workouts. Pei King is super knowledgeable and these workouts are fun. Pei King coaches us through exercise circuits challenging and effective, but not overwhelming. She’s knows the anatamy and understands the functions of each exercise, and educates us about both of them along the way. My entire body is firmer and in much better shape because of Pei King. I recommend Pei King for anyone who wants to improve their body and have an enjoyable time doing it."
+                </p>
+          </div>
+          <div class="col-md-5 text-center">
+            <img class="featurette-image" src="https://crossfitprospectheights.com/wp-content/uploads/2017/05/x12640440_502032439958581_4985231684986609748_o-500x500_c.jpg.pagespeed.ic.qTnbu7kUC1.jpg" alt="500x500">
+          </div>
+
+        <!-- </div> -->
+  </div>
+<!-- page 3 -->
+
+<!-- page line dividers  -->
+<hr class="featurette-divider">
+<!-- page line dividers -->
+
+<div class="row featurete">
+      <!-- <div class="row"> -->
+        <div class="col-md-5 text-center">
+          <img class="featurette-image" src="https://www.crossfitmindfire.com/wp-content/uploads/2015/06/joe.jpg" alt="500x500">
+        </div>
+        <div class="col-md-7 text-center">
+              <h2>Mike
+              <span class="text-muted">Long</span></h3>
+              <p class="lead">
+                "I had the opportunity to consult with Jeffrey regarding my current fitness and nutrition habits.  I was finding that my workouts were not benefitting me to the degree to which I desired.  Jeffrey offered very straight forward advice on both my workout and my diet.  The tips he offered were very practical and easy to integrate into my routine.  I really appreciated her approach that making small changes can make a big difference.  The results have been amazing.  I’ve dropped seven pant sizes and am in the best shape of my life.  People I’ve worked with for over a decade are complimenting me on the change and asking me how I’m doing it.  I certainly couldn’t have done it on my own.  Thank you, Jeffrey"
+              </p>
+        </div>
+
+      <!-- </div> -->
+</div>
+<!-- page 4 -->
+
+<!-- page line dividers  -->
+<hr class="featurette-divider">
+<!-- page line dividers -->
+
+<!-- start page 4 -->
+<div class="row featurete">
+      <!-- <div class="row"> -->
+        <div class="col-md-7 text-center">
+              <h2>Clair
+              <span class="text-muted">Kennedy</span></h3>
+              <p class="lead">
+                "Guy Brown is the best Trainer bar none and by far that I have ever had as a spin Trainer. Every ride has a plan, a purpose, an intention, and builds on the ride before, and fits into her seasonal plan that is methodical and goal oriented. He is a rarity. When you take the saddle you know you’re actually going some place, rather than remaining stationary, and you know what to look for ahead as he motivates you to reach that goal place. There is no one who better stresses form and technique, who teaches its laudatory purpose and strives to make everyone a better rider. While I can find a million excuses to stay away from the gym, without fail, I’m in the saddle with Guy. All of those times when I know I have no energy or motivation to ride, I make my way from the back of the pack. His rides are based on building strength and energy and motivation"
+              </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img class="featurette-image" src="http://biffs247.com/wp-content/uploads/2017/01/randi2-e1493916704717-500x500.png" alt="500x500">
+        </div>
+
+      <!-- </div> -->
+</div>
+
+<!-- page line dividers  -->
+<hr class="featurette-divider">
+<!-- page line dividers -->
+
+
+<footer class="container 2">
+        <p2 class="float-right">
+              <a href="#">Back to Top</a>
+        </p2>
+            <p>
+              @ 2017-2018 Company, Inc.
+                &#8231
+              <a href="#">Privacy</a>
+               &#8231
+              <a href="#">Terms</a>
+            </p>
+</footer>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   </body>
 </html>

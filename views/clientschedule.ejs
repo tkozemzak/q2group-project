@@ -40,7 +40,11 @@
         <% for(let i=0; i<classes.length; i++) { %>
         <tr>
           <td><%= classes[i].start_time %></td>
-          <td><a href="/signup/<%=classes[i].id%>" class="signUpButton" name="signup" >Sign Up Now</a>
+          <td>
+            <form>
+              <input action="/signup/<%=classes[i].id%>" method="post"  name="signup" />
+            </form>
+
           </td>
           <td><%= classes[i].level %></td>
           <td>Billy Joel</td>
