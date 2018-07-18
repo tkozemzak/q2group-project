@@ -12,7 +12,6 @@ exports.up = function(knex, Promise) {
         .inTable("clients")
         .onDelete("CASCADE")
         .index();
-    table.text("notes");
     table.timestamps(true, true);
 
   })
