@@ -2,7 +2,7 @@ const homepage = require("../controllers/homepage.js");
 const trainerlogin = require("../controllers/trainerlogin.js");
 const register = require("../controllers/register.js");
 const clientschedule = require("../controllers/clientschedule.js");
-const trainerschedule = require("../controllers/trainerschedule.js")
+const trainerschedule = require("../controllers/trainerschedule.js");
 
 module.exports = function(app){
 
@@ -22,9 +22,11 @@ app.post('/trainerlogin', trainerlogin.login);
 app.get('/trainerschedule', trainerschedule.index);
 
 
-//clientlogin
-app.get('/clientschedule/:id', clientschedule.index)
+//clientpage
+app.get('/clientschedule/:id', clientschedule.index);
 app.post('/clientlogin', clientschedule.login);
+app.get('/logout', clientschedule.logout);
+app.get('/signup/:id', clientschedule.signup)
 
 
 

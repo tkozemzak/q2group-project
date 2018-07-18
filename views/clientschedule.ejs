@@ -2,9 +2,169 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>client schedule</title>
+    <style media="screen">
+      table, th  {
+        /* border: 1px solid black; */
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+    </style>
   </head>
   <body>
-    client schedule
+    <a href="/logout">Logout</a>
+    <div class="">
+    <h2>Class Schedule</h2>
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>start time</th>
+          <th></th>
+          <th>classes</th>
+          <th>trainer</th>
+          <th>duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Date: <%= classes[0].date %></td>
+        </tr>
+        <% for(let i=0; i<classes.length; i++) { %>
+        <tr>
+          <td><%= classes[i].start_time %></td>
+          <td><a href="/signup/<%=classes[i].id%>" class="signUpButton" name="signup" >Sign Up Now</a>
+          </td>
+          <td><%= classes[i].level %></td>
+          <td>Billy Joel</td>
+          <td><%= classes[i].duration %></td>
+        </tr>
+        <% } %>
+      </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>start time</th>
+          <th></th>
+          <th>classes</th>
+          <th>trainer</th>
+          <th>duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tue July 17,2018</td>
+        </tr>
+        <tr>
+          <td id="5am">5:00 am</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>beginner</td>
+          <td>Bill</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="6am">6:00 am</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>intermediate</td>
+          <td>Samson</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="7am">7:00 am</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>advanced</td>
+          <td>Herucles</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="9am">9:00 am</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>beginner</td>
+          <td>bill</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="12pm">12:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>intermediate</td>
+          <td>Samson</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="3pm">3:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>advanced</td>
+          <td>Herucles</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="4pm">4:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>beginner</td>
+          <td>bill</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="5pm">5:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>intermediate</td>
+          <td>Samson</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="6pm">6:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>advanced</td>
+          <td>Herucles</td>
+          <td>1 hour</td>
+        </tr>
+        <tr>
+          <td id="7pm">7:00 pm</td>
+          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
+          <td>beginner</td>
+          <td>bill</td>
+          <td>1 hour</td>
+        </tr>
+      </tbody>
+
+    </table>
+    </div>
   </body>
 </html>
