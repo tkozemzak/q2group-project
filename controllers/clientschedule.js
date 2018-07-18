@@ -30,7 +30,12 @@ signup: function(req, res) {
       class_id: results[0].id,
       client_id: req.session.user.id
     }).then(()=>{
-      res.redirect(`/clientschedule/${req.session.user.id}`);
+      function myFunction() {
+    alert("Hello! I am an alert box!");
+}
+
+        res.redirect(`/clientschedule/${req.session.user.id}`);
+    
     })
   })
 
@@ -40,7 +45,7 @@ signup: function(req, res) {
     logout: function(req, res) {
       req.session.destroy()
         res.redirect('/')
-      
+
     }
 
 

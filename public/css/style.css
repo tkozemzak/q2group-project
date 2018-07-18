@@ -43,9 +43,10 @@ body {
   border-radius: 50%;
 }
 
-col-lg-4 {
+.col-lg-4 {
   padding-left: 30px;
   color: white;
+  border: 2px solid red;
 }
 
 h2 {
