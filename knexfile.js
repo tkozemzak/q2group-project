@@ -3,9 +3,8 @@ module.exports = {
       client: 'pg',
       connection: {
         database: "trainerApp",
-        host: "localhost",
-        user: 'administrator',
-        password: 'RelsonGracie77'
+        host: "localhost"
+
 
       },
       migrations: {
