@@ -38,31 +38,26 @@ body {
 
 .avatar {
   vertical-align: middle;
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
 }
 
 .col-lg-4 {
   padding-left: 30px;
   color: white;
-  border: 2px solid red;
 }
 
 h2 {
   text-align: center;
   color: white;
+  font-size: 45px;
 }
 
 hr {
   margin-left: 150px;
   margin-right: 150px;
 }
-
-/* .rowfeaturette {
-  margin-left: -15px;
-  margin-right: -15px;
-} */
 
 .col-md-7 {
   margin-top: 350px;
