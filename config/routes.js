@@ -16,17 +16,19 @@ app.get('/trainerlogin', trainerlogin.index);
 app.get('/register', register.index);
 app.post('/register', register.create)
 
-
-//trainerlogin
-app.post('/trainerlogin', trainerlogin.login);
-app.get('/trainerschedule', trainerschedule.index);
-
-
 //clientpage
 app.get('/clientschedule/:id', clientschedule.index);
 app.post('/clientlogin', clientschedule.login);
 app.get('/logout', clientschedule.logout);
 app.get('/signup/:id', clientschedule.signup)
+
+app.use(authenticateUser);
+//trainerlogin
+app.post('/trainerlogin', trainerlogin.login);
+app.get('/trainerschedule', trainerschedule.index);
+
+
+
 
 
 
@@ -34,12 +36,12 @@ app.get('/signup/:id', clientschedule.signup)
 }
 
 
-// app.use(authenticateUser);
+
 //
-// function authenticateUser(req, res, next){
-//   if(!req.session.user){
-//     res.redirect('/');
-//   } else {
-//     next();
-//   }
-// }
+function authenticateUser(req, res, next){
+  if(!req.session.user){
+    res.redirect('/');
+  } else {
+    next();
+  }
+}
