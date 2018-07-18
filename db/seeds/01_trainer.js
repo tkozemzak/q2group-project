@@ -6,7 +6,7 @@ exports.seed = function(knex, Promise) {
       // Inserts seed entries
       return knex('trainer').insert([
 
-        {name: 'Billy Joel', email: 'billy@billyjoel.com', password: 'billyboy'}
+        {name: 'Billy Joel', email: 'billy@billyjoel.com', password: 'billyboy', img_url: "www.google.com"}
       ]);
     });
 };
