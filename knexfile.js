@@ -4,8 +4,7 @@ module.exports = {
       connection: {
         database: "trainerApp",
         host: "localhost",
-        user: 'administrator',
-        password: 'RelsonGracie77'
+        
       },
       migrations: {
           directory: __dirname + '/db/migrations',

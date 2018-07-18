@@ -17,8 +17,67 @@
     </style>
   </head>
   <body>
+    <a href="/logout">Logout</a>
     <div class="">
     <h2>Class Schedule</h2>
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>start time</th>
+          <th></th>
+          <th>classes</th>
+          <th>trainer</th>
+          <th>duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Date: <%= classes[0].date %></td>
+        </tr>
+        <% for(let i=0; i<classes.length; i++) { %>
+        <tr>
+          <td><%= classes[i].start_time %></td>
+          <td><a href="/signup/<%=classes[i].id%>" class="signUpButton" name="signup" >Sign Up Now</a>
+          </td>
+          <td><%= classes[i].level %></td>
+          <td>Billy Joel</td>
+          <td><%= classes[i].duration %></td>
+        </tr>
+        <% } %>
+      </tbody>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <table>
       <thead>
         <tr>
