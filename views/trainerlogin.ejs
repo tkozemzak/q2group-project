@@ -10,6 +10,10 @@
    </head>
 
    <body>
+     <div class="back-div">
+       <a href="/"><button class="back">Back</button></a>
+     </div>
+
       <h3>Trainer Login</h3>
       <div class="imgcontainer">
          <img src="<%=results.img_url%>" alt="Avatar" class="avatar">
@@ -21,7 +25,7 @@
             <input type="text" placeholder="Enter Email" name="email" required>
             <label for="password"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="password" required>
-            <a href="/trainerschedule"> <button type="submit" name="button">Login</button>  </a>
+            <a href="/trainerschedule"> <button class="login" type="submit" name="button">Login</button>  </a>
          </form>
       </div>
    </body>

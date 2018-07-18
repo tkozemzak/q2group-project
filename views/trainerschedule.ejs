@@ -11,24 +11,23 @@
   </head>
   <body>
     <a href="/logout">Logout</a>
-    <h1>Hello <%= results.name %></h1>
+    <h1>Trainer <%= results.name %></h1>
 
-    <h3>Your Appointments:</h3>
-      <% for(let i=0; i<appts.length; i++){ %>
+    <h3>Your Clients:</h3>
+      <% for(let i=0; i<clients.length; i++){ %>
         <div class='card'>
-          <h2>Name: <%= appts[i].name %></h2>
-          <h3>Date: <%= appts[i].date%></h3>
+          <h2>Name: <%= clients[i].name %></h2>
           <p>
-            Goals: <%= appts[i].goals %>
+            Goals: <%= clients[i].goals %>
           </p>
           <p>
-            Experience Level: <%= appts[i].level %>
+            Experience Level: <%= clients[i].level %>
           </p>
           <p>
-            Age: <%= appts[i].age %>
+            Age: <%= clients[i].age %>
           </p>
           <p>
-            Email: <%= appts[i].email %>
+            Email: <%= clients[i].email %>
           </p>
         </div>
         <% } %>
