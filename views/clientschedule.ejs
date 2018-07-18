@@ -20,9 +20,6 @@
     <a href="/logout">Logout</a>
     <div class="">
     <h2>Class Schedule</h2>
-
-
-
     <table>
       <thead>
         <tr>
@@ -42,7 +39,7 @@
           <td><%= classes[i].start_time %></td>
           <td>
             <form>
-              <input action="/signup/<%=classes[i].id%>" method="post"  name="signup" />
+              <a href="/signup/<%=classes[i].id%>">Sign up</a>
             </form>
 
           </td>
@@ -51,121 +48,6 @@
           <td><%= classes[i].duration %></td>
         </tr>
         <% } %>
-      </tbody>
-
-    </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <table>
-      <thead>
-        <tr>
-          <th>start time</th>
-          <th></th>
-          <th>classes</th>
-          <th>trainer</th>
-          <th>duration</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Tue July 17,2018</td>
-        </tr>
-        <tr>
-          <td id="5am">5:00 am</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>beginner</td>
-          <td>Bill</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="6am">6:00 am</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>intermediate</td>
-          <td>Samson</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="7am">7:00 am</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>advanced</td>
-          <td>Herucles</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="9am">9:00 am</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>beginner</td>
-          <td>bill</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="12pm">12:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>intermediate</td>
-          <td>Samson</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="3pm">3:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>advanced</td>
-          <td>Herucles</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="4pm">4:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>beginner</td>
-          <td>bill</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="5pm">5:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>intermediate</td>
-          <td>Samson</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="6pm">6:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>advanced</td>
-          <td>Herucles</td>
-          <td>1 hour</td>
-        </tr>
-        <tr>
-          <td id="7pm">7:00 pm</td>
-          <td><input type="button" class="signUpButton" name="signup" value="Sign Up Now"</td>
-          <td>beginner</td>
-          <td>bill</td>
-          <td>1 hour</td>
-        </tr>
       </tbody>
 
     </table>

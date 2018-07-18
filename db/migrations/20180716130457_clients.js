@@ -7,6 +7,9 @@ exports.up = function(knex, Promise) {
     table.string("level");
     table.string("email");
     table.string("password");
+    table.integer("creditcardnumber");
+    table.integer("cvv");
+    table.string("expiration");
     table.timestamps(true, true);
   })
 };

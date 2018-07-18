@@ -38,9 +38,9 @@ signup: function(req, res) {
 },
 
     logout: function(req, res) {
-      req.session.destroy().then(()=>{
+      req.session.destroy()
         res.redirect('/')
-      })
+      
     }
 
 

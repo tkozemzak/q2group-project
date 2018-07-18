@@ -15,7 +15,10 @@ module.exports = {
       age: req.body.age,
       level: req.body.level,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      creditcardnumber: req.body.creditcard,
+      cvv: req.body.cvv,
+      expiration: req.body.expiration
     }).then(()=>{
       res.redirect('/')
     })

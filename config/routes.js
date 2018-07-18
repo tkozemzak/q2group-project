@@ -26,7 +26,7 @@ app.get('/trainerschedule', trainerschedule.index);
 app.get('/clientschedule/:id', clientschedule.index);
 app.post('/clientlogin', clientschedule.login);
 app.get('/logout', clientschedule.logout);
-app.post('/signup/:id', clientschedule.signup)
+app.get('/signup/:id', clientschedule.signup)
 
 
 
