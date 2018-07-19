@@ -10,7 +10,7 @@ exports.seed = function(knex, Promise) {
           email: 'troy@amelotte.com',
           password: 'troy',
           bio: 'Troy is an ex Navy Seal who has trained for years to keep his body in top physical shape. He has a degree in nutrition and utilizes his expertise in this area to help bring your body to the next level',
-          img_url: "https://static1.squarespace.com/static/534b1517e4b0b2883888bafe/t/55777e33e4b07cb18d9e3e5f/1433942663680/Personal-Trainer-in-Chicago.jpg?format=2500w"
+          img_url: "https://media.licdn.com/dms/image/C5103AQH7WcSg8TQsmA/profile-displayphoto-shrink_200_200/0?e=1537401600&v=beta&t=8OFIeXzRVc_g3ncKkpPLuhX7qlk1yLE7wWD0cwtBXDg"
         }
       ]);
     });
