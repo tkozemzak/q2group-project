@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
     .card {
       border: solid;
     }
-    </style>
-  </head>
-  <body>
-    <a href="/logout">Logout</a>
-    <h1>Trainer <%= results.name %></h1>
+  </style>
+</head>
 
-    <h3>Your Clients:</h3>
-      <% for(let i=0; i<clients.length; i++){ %>
-        <div class='card'>
-          <h2>Name: <%= clients[i].name %></h2>
-          <p>
-            Goals: <%= clients[i].goals %>
-          </p>
-          <p>
-            Experience Level: <%= clients[i].level %>
-          </p>
-          <p>
-            Age: <%= clients[i].age %>
-          </p>
-          <p>
-            Email: <%= clients[i].email %>
-          </p>
-        </div>
-        <% } %>
-  </body>
+<body>
+  <a href="/logout">Logout</a>
+  <h1>Trainer <%= results.name %></h1>
+
+  <h3>Your Clients:</h3>
+  <% for(let i=0; i<clients.length; i++){ %>
+    <div class='card'>
+      <h2>Name: <%= clients[i].name %></h2>
+      <p>
+        Goals:
+        <%= clients[i].goals %>
+      </p>
+      <p>
+        Experience Level:
+        <%= clients[i].level %>
+      </p>
+      <p>
+        Age:
+        <%= clients[i].age %>
+      </p>
+      <p>
+        Email:
+        <%= clients[i].email %>
+      </p>
+    </div>
+    <% } %>
+</body>
+
 </html>
