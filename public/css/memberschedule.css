@@ -1,0 +1,21 @@
+.table {
+  border: 5px solid black;
+  height: 50%;
+  width: 55%;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+th {
+  /* border: 1px solid black; */
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.container2 {
+  margin-left: 37%;
+}
