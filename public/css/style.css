@@ -10,10 +10,10 @@
 }
 
 .login-form {
-display: flex;
-align-items: center;
-flex-direction: column;
-width: 23.75vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23.75vw;
 }
 
 /* carousel font heading */
@@ -42,8 +42,6 @@ body {
   filter: alpha(opacity=50);
   background-size: cover;
 }
-
-/* dam dolls circle */
 
 .avatar {
   vertical-align: middle;
@@ -113,13 +111,3 @@ ul.dropdown-lr {
     color: #eee;
   }
 }
-
-/* featurette-image {
-  width: 500px;
-  height: 500px;
-  margin-top: 150px;
-} */
-
-/* https://www.nature.org/cs/groups/webcontent/@web/@newhampshire/documents/media/kimballhillvista-1600x655-jkle.jpg */
-
-/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzWq7huQdqjqdQjUsQrxQEMJ1Lzk5RBglxwvq4RP51wWEhD2J */

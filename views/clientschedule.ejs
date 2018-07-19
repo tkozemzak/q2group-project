@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>client schedule</title>
-    <style media="screen">
-      table, th  {
-        /* border: 1px solid black; */
-        text-align: left;
-        padding: 8px;
-      }
 
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
+<head>
+  <meta charset="utf-8">
+  <title>client schedule</title>
+  <style media="screen">
+    table,
+    th {
+      /* border: 1px solid black; */
+      text-align: left;
+      padding: 8px;
+    }
 
-    </style>
-  </head>
-  <body>
-    <a href="/logout">Logout</a>
-    <div class="">
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="/logout">Logout</a>
+  <div class="">
     <h2>Class Schedule</h2>
     <table>
       <thead>
@@ -32,32 +34,41 @@
       </thead>
       <tbody>
         <tr>
-          <td>Date: <%= classes[0].date %></td>
+          <td>Date:
+            <%= classes[0].date %>
+          </td>
         </tr>
         <% for(let i=0; i<classes.length; i++) { %>
-        <tr>
-          <td><%= classes[i].start_time %></td>
-          <td>
-            <form>
-              <a href="/signup/<%=classes[i].id%>" onclick="myFunction()">Sign up</a>
-            </form>
+          <tr>
+            <td>
+              <%= classes[i].start_time %>
+            </td>
+            <td>
+              <form>
+                <a href="/signup/<%=classes[i].id%>" onclick="myFunction()">Sign up</a>
+              </form>
 
-          </td>
-          <td><%= classes[i].level %></td>
-          <td>Billy Joel</td>
-          <td><%= classes[i].duration %></td>
-        </tr>
-        <% } %>
+            </td>
+            <td>
+              <%= classes[i].level %>
+            </td>
+            <td>Billy Joel</td>
+            <td>
+              <%= classes[i].duration %>
+            </td>
+          </tr>
+          <% } %>
       </tbody>
 
     </table>
-    </div>
+  </div>
 
 
-<script>
-function myFunction() {
-    alert("You're signed up!");
-}
-</script>
-  </body>
+  <script>
+    function myFunction() {
+      alert("You're signed up!");
+    }
+  </script>
+</body>
+
 </html>

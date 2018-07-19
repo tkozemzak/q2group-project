@@ -3,8 +3,10 @@ const knex = require("../db/knex.js");
 module.exports = {
   // CHANGE ME TO AN ACTUAL FUNCTION
   index: function(req, res) {
-    knex("clients").then((results)=>{
-      res.render("register", {results: results[0]});
+    knex("clients").then((results) => {
+      res.render("register", {
+        results: results[0]
+      });
 
     })
   },
@@ -19,7 +21,7 @@ module.exports = {
       creditcardnumber: req.body.creditcard,
       cvv: req.body.cvv,
       expiration: req.body.expiration
-    }).then(()=>{
+    }).then(() => {
       res.redirect('/')
     })
   }

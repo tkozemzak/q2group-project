@@ -4,28 +4,28 @@ const register = require("../controllers/register.js");
 const clientschedule = require("../controllers/clientschedule.js");
 const trainerschedule = require("../controllers/trainerschedule.js");
 
-module.exports = function(app){
+module.exports = function(app) {
 
 
-app.get('/', homepage.index);
+  app.get('/', homepage.index);
 
 
-app.get('/trainerlogin', trainerlogin.index);
+  app.get('/trainerlogin', trainerlogin.index);
 
-//registration
-app.get('/register', register.index);
-app.post('/register', register.create)
+  //registration
+  app.get('/register', register.index);
+  app.post('/register', register.create)
 
-//clientpage
-app.get('/clientschedule/:id', clientschedule.index);
-app.post('/clientlogin', clientschedule.login);
-app.get('/logout', clientschedule.logout);
-app.get('/signup/:id', clientschedule.signup)
+  //clientpage
+  app.get('/clientschedule/:id', clientschedule.index);
+  app.post('/clientlogin', clientschedule.login);
+  app.get('/logout', clientschedule.logout);
+  app.get('/signup/:id', clientschedule.signup);
 
-app.use(authenticateUser);
-//trainerlogin
-app.post('/trainerlogin', trainerlogin.login);
-app.get('/trainerschedule', trainerschedule.index);
+  app.use(authenticateUser);
+  //trainerlogin
+  app.post('/trainerlogin', trainerlogin.login);
+  app.get('/trainerschedule', trainerschedule.index);
 
 
 
@@ -38,8 +38,8 @@ app.get('/trainerschedule', trainerschedule.index);
 
 
 //
-function authenticateUser(req, res, next){
-  if(!req.session.user){
+function authenticateUser(req, res, next) {
+  if (!req.session.user) {
     res.redirect('/');
   } else {
     next();
