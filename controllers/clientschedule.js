@@ -6,7 +6,6 @@ module.exports = {
     knex("clients").where('id', req.params.id).then((results) => {
       knex("classes").then((classResults) => {
         knex("appts").where('appts.client_id', req.params.id).then((apptResults)=>{
-          console.log(apptResults);
           res.render("clientschedule", {
             results: results[0],
             classes: classResults,
