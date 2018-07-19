@@ -7,6 +7,7 @@ body {
 h1 {
   text-align: center;
   color: white;
+margin-right: 6vw;
 }
 
 p {
@@ -22,7 +23,7 @@ p {
 
 .container5 {
   border: none;
-  margin-left: 400px;
+  margin-left: 25vw;
   height: 500px;
   width: 650px;
   padding: 10px;
