@@ -1,11 +1,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://www.shbarcelona.com/blog/en/wp-content/uploads/2016/04/Crossfit-Gym.jpg");
+  background-image: url("http://vptwa.com/wp-content/uploads/2017/03/dh-fitness-personal-training-durham.jpg");
   color: white;
-  background: cover;
+  background-size: cover;
 }
 
 .table {
+background-color: black;
+width: 50vw;
+
 }
 
 
