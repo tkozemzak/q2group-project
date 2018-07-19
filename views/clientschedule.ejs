@@ -8,15 +8,17 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
       <link rel="stylesheet" href="/static/css/memberschedule.css">
       <nav>
-
-
+         <nav>
+            <a href="/logout">Logout</a>
+         </nav>
       </nav>
    </head>
 
    <body>
-      <a href="/logout">Logout</a>
+      <h2>Class Schedule for <%= results.name %></h2>
+
+
       <div class="table">
-         <h2>Class Schedule for <%= results.name %></h2>
          <table>
             <thead>
                <tr>
@@ -40,7 +42,7 @@
                      </td>
                      <td>
                         <form>
-                           <a href="/signup/<%=classes[i].id%>" onclick="myFunction()">Sign up</a>
+                           <a href="/signup/<%=classes[i].id%>" onclick="myFunction()"> <button type="button" name="button">Sign Up</button> </a>
                         </form>
 
                      </td>

@@ -1,9 +1,28 @@
+body {
+  background-image: url(http://crossfitsuasponte.com/wp-content/uploads/2015/05/Crossfit-Durham-Interior-Picture.jpg);
+  background: cover;
+}
+
 .table {
-  border: 5px solid black;
+  /* border: 5px solid black; */
   height: 50%;
   width: 55%;
-  margin-left: 20%;
-  margin-top: 10%;
+  margin-left: 22%;
+  margin-top: 5%;
+  background-color: rgba(192, 192, 192, 0.9);
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 2%;
+  color: white;
 }
 
 th {
@@ -12,9 +31,13 @@ th {
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+/* tr:nth-child(even) {
+  background-color: rgba(192, 192, 192, 0.9);
 }
+
+tr:nth-child(odd) {
+  background-color: rgba(192, 192, 192, 0.9);
+} */
 
 .container2 {
   margin-left: 37%;
