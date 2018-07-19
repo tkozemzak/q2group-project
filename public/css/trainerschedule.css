@@ -1,6 +1,7 @@
 body {
   background-image: url("https://thefourpercent.com/wp-content/uploads/2015/07/SJ-background.jpg");
   background-size: cover;
+  background-color: black;
 }
 
 nav {
@@ -19,11 +20,14 @@ nav {
 h1 {
   color: white;
   text-shadow: 3px 3px black;
+  font-size: 60px;
+
 }
 
 h3 {
   color: white;
   text-shadow: 3px 3px black;
+  font-size: 50px;
 }
 
 .card {
@@ -35,4 +39,11 @@ h3 {
   margin-right: 10%;
   background: rgba(0, 0, 0, 0.5);
   margin-top: 1%;
+<<<<<<< HEAD
 }
+=======
+}
+p {
+  font-size: 25px;
+}
+>>>>>>> 584447a7b367e522097da9571c9dc61b4132e852
