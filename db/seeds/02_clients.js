@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           level: 'beginner',
           goals: 'donnie goal',
           email: 'donnie@donnie.donnie',
-          password: 'ilike4runners',
+          password: 'donnie',
           creditcardnumber: '023948',
           cvv: '343',
           expiration: '6/1/22'
@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
           level: 'athlete',
           goals: 'tyler goal',
           email: 'tyler@tyler.tyler',
-          password: 'skatelyfe',
+          password: 'tyler',
           creditcardnumber: '987838',
           cvv: '877',
           expiration: '1/12/21'
@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
           level: 'intermediate',
           goals: 'tim goal',
           email: 'tim@tim.tim',
-          password: 'washingtonboy',
+          password: 'tim',
           creditcardnumber: '333444',
           cvv: '655',
           expiration: '5/16/23'

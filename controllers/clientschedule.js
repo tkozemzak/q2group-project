@@ -3,12 +3,17 @@ const knex = require("../db/knex.js");
 module.exports = {
   // CHANGE ME TO AN ACTUAL FUNCTION
   index: function(req, res) {
-    knex("clients").then((results) => {
+    knex("clients").where('id', req.params.id).then((results) => {
       knex("classes").then((classResults) => {
-        res.render("clientschedule", {
-          results: results[0],
-          classes: classResults
-        });
+        knex("appts").where('appts.client_id', req.params.id).then((apptResults)=>{
+          console.log(apptResults);
+          res.render("clientschedule", {
+            results: results[0],
+            classes: classResults,
+            appts: apptResults
+          });
+        })
+
       })
     })
   },

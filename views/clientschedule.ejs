@@ -24,7 +24,7 @@
 <body>
   <a href="/logout">Logout</a>
   <div class="table">
-    <h2>Class Schedule</h2>
+    <h2>Class Schedule for <%= results.name %></h2>
     <table>
       <thead>
         <tr>
@@ -66,6 +66,15 @@
     </table>
   </div>
 
+<div class="appointments">
+  <% for(let i=0; i<appts.length; i++){ %>
+    <div class="card">
+      hello
+    </div>
+
+  <% } %>
+
+</div>
 
   <script>
     function myFunction() {
