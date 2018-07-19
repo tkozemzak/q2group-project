@@ -17,27 +17,22 @@ module.exports = function(app) {
   app.post('/register', register.create)
 
   //clientpage
-  app.get('/clientschedule/:id', clientschedule.index);
   app.post('/clientlogin', clientschedule.login);
-  app.get('/logout', clientschedule.logout);
+
+
   app.get('/signup/:id', clientschedule.signup);
+
+  app.post('/trainerlogin', trainerlogin.login);
 
   app.use(authenticateUser);
   //trainerlogin
-  app.post('/trainerlogin', trainerlogin.login);
   app.get('/trainerschedule', trainerschedule.index);
-
-
-
-
-
-
+  
+  app.get('/clientschedule/:id', clientschedule.index);
+  app.get('/logout', clientschedule.logout);
 
 }
 
-
-
-//
 function authenticateUser(req, res, next) {
   if (!req.session.user) {
     res.redirect('/');
