@@ -1,0 +1,33 @@
+body {
+  background-image: url("https://thefourpercent.com/wp-content/uploads/2015/07/SJ-background.jpg");
+  background-size: cover;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1 {
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+h3 {
+  color: white;
+  text-shadow: 3px 3px black;
+}
+.card {
+  background: inherit;
+  color: white;
+  text-shadow: 3px 3px black;
+  border-top: solid black;
+}
