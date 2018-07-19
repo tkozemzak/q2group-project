@@ -8,6 +8,13 @@ body {
   text-shadow: 3px 3px black;
 }
 
+.center{
+  background: rgba(0,0,0,0.5);
+  height: 100vh;
+
+}
+
+
 h3 {
   text-align: center;
   font-size: 60px;
@@ -21,6 +28,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 10%;
 }
 
 .login {
@@ -30,6 +38,8 @@ input[type=text], input[type=password] {
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 10%;
+
 }
 
 .back-nav {
