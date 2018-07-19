@@ -1,6 +1,12 @@
+
+
 #formLogin {
   padding: 15px;
   min-width: 300px;
+}
+
+#register-button {
+  float: right;
 }
 
 .container {
@@ -41,6 +47,7 @@ body {
   opacity: 1;
   filter: alpha(opacity=50);
   background-size: cover;
+
 }
 
 .avatar {
