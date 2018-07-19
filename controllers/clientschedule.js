@@ -21,6 +21,8 @@ module.exports = {
   login: function(req, res) {
     knex('clients').where('email', req.body.email).then((results) => {
       let user = results[0];
+      req.session.save(()=>{
+
       if (user.password === req.body.password) {
         req.session.user = user;
 
@@ -28,6 +30,7 @@ module.exports = {
       } else {
         res.redirect("/");
       }
+    })
     })
   },
   //
