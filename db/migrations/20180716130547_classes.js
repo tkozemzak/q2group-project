@@ -10,6 +10,7 @@ exports.up = function(knex, Promise) {
     table.string("start_time")
     table.string("duration");
     table.string("level");
+    table.string("description")
     table.timestamps(true, true);
 
   })
